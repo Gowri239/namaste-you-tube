@@ -13,6 +13,13 @@ const SideBar = () => {
         <li>History</li>
         <li>Live</li>
       </ul>
+      <h1 className="font-bold p-2">You</h1>
+      <ul className="px-2">
+        <li>History</li>
+        <li>Playlists</li>
+        <li>Watch later</li>
+        <li>Liked videos</li>
+      </ul>
       <h1 className="font-bold p-2">Subscriptions</h1>
       <ul className="px-2">
         <li>Akshay Saini</li>

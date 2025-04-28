@@ -1,8 +1,35 @@
 import React from "react";
-import MenuItems from "./MenuItems";
+import { useSelector } from "react-redux";
 
 const SideBar = () => {
-  return <MenuItems />;
+  const { isMenuOpen } = useSelector((store) => store.app);
+  if (!isMenuOpen) return null;
+
+  return (
+    <div className="shadow-xl w-50 p-2">
+      <ul className="px-2">
+        <li>Home</li>
+        <li>Shorts</li>
+        <li>History</li>
+        <li>Live</li>
+      </ul>
+      <h1 className="font-bold p-2">Subscriptions</h1>
+      <ul className="px-2">
+        <li>Akshay Saini</li>
+        <li>take U forward </li>
+        <li>Vismai Foods</li>
+        <li>All Subscriptions</li>
+      </ul>
+      <h1 className="font-bold p-2">Explore</h1>
+      <ul className="px-2">
+        <li>Trending</li>
+        <li>Courses</li>
+        <li>Shopping</li>
+        <li>Movies</li>
+        <li>Sports</li>
+      </ul>
+    </div>
+  );
 };
 
 export default SideBar;

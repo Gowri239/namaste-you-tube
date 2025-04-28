@@ -26,7 +26,7 @@ const Header = () => {
           className="w-1/2 p-3 ml-30 border h-8 border-solid border-black rounded-l-full"
           placeholder="Search"
         />
-        <button className="rounded-r-full border border-solid h-8 px-3 bg-gray-200 border-black">
+        <button className="cursor-pointer rounded-r-full border border-solid h-8 px-3 bg-gray-200 border-black">
           🔍
         </button>
       </div>
